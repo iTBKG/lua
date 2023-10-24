@@ -1,0 +1,23 @@
+cartuchal = 10
+
+function veratir()
+  tecla = io.read()
+  return tecla == "F"
+end
+
+function vercart()
+  if cartuchal >= 1 then
+    return true
+  else
+    return false
+  end
+end
+
+if veratir() and vercart() then
+  print("BOOM")
+  cartuchal = cartuchal - 1
+end
+
+while cartuchal <= 0 do
+  print(cartuchal)		<-------- resolver
+end
